@@ -94,6 +94,30 @@ H_PATTERN = re.compile(r'.*_(\d)h_.*')
 MIN_PATTERN = re.compile(r'.*_(\d+)min_.*')
 
 
+def get_strain_duration(imagename):
+    """" Detect control or strain time"""
+    if "Kontrolle" in imagename or "control" in imagename:
+        return "Control"
+    elif H_PATTERN.match(imagename):
+        m = H_PATTERN.match(imagename)
+        return "%sh" % m.group(1)
+    elif MIN_PATTERN.match(experiment):
+        m = MIN_PATTERN.match(imagename)
+        return "%smin" % m.group(1)
+    else:
+        raise Exception("Could not detect the strain duration")
+
+
+def get_treatment(imagename):
+    """" Detect image treament"""
+    if "_DMSO_" in experiment:
+        return "DMSO"
+    elif "_Noc_" in experiment:
+        return "Noc"
+    else:
+        return "Untreated"
+
+
 logging.basicConfig(level=DEBUG, format='%(message)s')
 
 # Check paths
@@ -103,27 +127,11 @@ if not exists(BASE_DIRECTORY):
 for experiment, image_number in sorted(EXPERIMENTS.iteritems()):
     logging.info("Checking %s" % experiment[0:16])
 
-    # Detect control or strain time
-    if "Kontrolle" in experiment or "control" in experiment:
-        strain = "Control"
-    elif H_PATTERN.match(experiment):
-        m = H_PATTERN.match(experiment)
-        strain = "%sh" % m.group(1)
-    elif MIN_PATTERN.match(experiment):
-        m = MIN_PATTERN.match(experiment)
-        strain = "%smin" % m.group(1)
-    else:
-        raise Exception("Could not find a type")
+    # Generate dataset name
+    datasetname = "%s %s" % (
+        get_treatment(experiment), get_strain_duration(experiment))
 
-    # Detect treatment
-    if "_DMSO_" in experiment:
-        treatment = "DMSO"
-    elif "_Noc_" in experiment:
-        treatment = "Noc"
-    else:
-        treatment = "Untreated"
-
-    # Detect actin and vimentin
+    # Detect presence of actin and vimentin
     if "actin" in experiment:
         actin = True
     elif experiment.startswith("ExperimentB"):
@@ -131,13 +139,10 @@ for experiment, image_number in sorted(EXPERIMENTS.iteritems()):
         actin = True
     else:
         actin = False
-    vimentin = ("_vimentin_" in experiment)
-
-    # Generate dataset name
-    datasetname = "%s %s" % (treatment, strain)
     if actin:
         datasetname += " Actin"
-    if vimentin:
+
+    if "_vimentin_" in experiment:
         datasetname += " Vimentin"
     logging.info("Detected as dataset %s" % datasetname)
 
