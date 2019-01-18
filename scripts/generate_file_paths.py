@@ -3,8 +3,9 @@
 
 import logging
 import re
-from os.path import exists, join
+from os.path import exists, join, dirname, realpath
 import os
+import sys
 
 DEBUG = int(os.environ.get("DEBUG", logging.DEBUG))
 EXPERIMENTS = {
@@ -90,8 +91,13 @@ EXPERIMENTS = {
 BASE_DIRECTORY = "/uod/idr/filesets/idr0050-springer-cytoskeletalsystems"
 FTP_DIRECTORY = "20181106-ftp"
 
+# Patterns for detecting strain duration from filename
 H_PATTERN = re.compile(r'.*_(\d)h_.*')
 MIN_PATTERN = re.compile(r'.*_(\d+)min_.*')
+
+IMAGE_FILEPATHS = join(
+    dirname(dirname(realpath(sys.argv[0]))),
+    "experimentA", "idr0050-experimentA-filePaths.tsv")
 
 
 def get_strain_duration(imagename):
@@ -124,6 +130,7 @@ logging.basicConfig(level=DEBUG, format='%(message)s')
 if not exists(BASE_DIRECTORY):
     raise Exception("Cannot find %s" % BASE_DIRECTORY)
 
+filepaths = {}
 for experiment, image_number in sorted(EXPERIMENTS.iteritems()):
     logging.info("Checking %s" % experiment[0:16])
 
@@ -163,4 +170,9 @@ for experiment, image_number in sorted(EXPERIMENTS.iteritems()):
             images_directory, experiment[0:-7] + "%03d" % i +
             experiment[-4:])
         assert exists(image_filepath), image_filepath
+        filepaths[image_filepath] = datasetname
     logging.info("Found %s images" % image_number)
+
+with open(IMAGE_FILEPATHS, 'w') as f:
+    for filepath, dataset in sorted(filepaths.iteritems()):
+        f.write("Dataset:name:%s\t%s\n" % (dataset, filepath))
