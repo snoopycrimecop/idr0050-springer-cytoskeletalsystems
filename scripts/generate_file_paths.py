@@ -61,6 +61,7 @@ EXPERIMENTS = {
   'ExperimentB_No01_DMSO_23_control__023.czi': 10,
   'ExperimentB_No01_DMSO_23_control__033.lsm': 6,
   'ExperimentB_No01_DMSO_23_control__039.czi': 1,
+  'ExperimentB_No02_DMSO_22_control__001.czi': 30,
   'ExperimentB_No03_Noc_21_control__001.czi': 28,
   'ExperimentB_No04_Noc_22_control__001.czi': 31,
   'ExperimentB_No05_DMSO_11_10min__001.czi': 22,
