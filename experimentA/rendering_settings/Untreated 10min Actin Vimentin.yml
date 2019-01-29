@@ -13,7 +13,7 @@ channels:
     label: Actin
     color: FF0000
     active: true
-  3:
+  4:
     label: Microtubules
     color: 00FF00
     active: true
