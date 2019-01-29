@@ -150,7 +150,11 @@ for experiment, image_number in sorted(EXPERIMENTS.iteritems()):
     if actin:
         datasetname += " Actin"
 
-    if "_vimentin_" in experiment:
+    # Although vimentin is missing from the filenames experimentA 7 and 8 are
+    # measuring acting and vimentin
+    if ("_vimentin_" in experiment or
+            experiment.startswith("ExperimentA_No07") or
+            experiment.startswith("ExperimentA_No08")):
         datasetname += " Vimentin"
     logging.info("Detected as dataset %s" % datasetname)
 
