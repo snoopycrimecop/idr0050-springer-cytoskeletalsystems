@@ -21,29 +21,26 @@ defaults:
 
 columns:
 
-  - name: Channels
-    clientname: Channels
-    include: yes
   - name: Characteristics [Organism Part]
     clientname: Organism Part
     include: yes
-  - name: Assay Name
-    clientname: Assay Name
+  - name: Experimental Condition [Nocodazole or DMSO]
+    clientname: Pharmacological Treatment
     include: yes
   - name: Experimental Condition [stretch duration]
-    clientname: stretch duration
-    include: yes
-  - name: Comment [Image File Comments]
-    clientname: Image File Comments
-    include: yes
-  - name: Comment [Image File Type]
-    clientname: Image File Type
+    clientname: Stretch Duration
     include: yes
 
   ######################################################################
   # mapr groups
   ######################################################################
 
+  - group:
+      namespace: openmicroscopy.org/mapr/cell_line
+      columns:
+        - name: Characteristics [Cell Line]
+          clientname: Cell Line
+          include: yes
 
   - group:
       namespace: openmicroscopy.org/mapr/organism
