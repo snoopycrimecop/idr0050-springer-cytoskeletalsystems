@@ -12,6 +12,7 @@
 
 file="idr0050-all-renderingMapping.tsv"
 omero="/opt/omero/server/OMERO.server/bin/omero"
+render="/opt/omero/server/OMERO.server/bin/omero render set"
 
 while IFS='	' read -r f1 f2
 do
@@ -24,7 +25,7 @@ do
 		if [[ $imageid == Image* ]]
 		then
 			printf 'Applying rendering settings %s (dataset %s) to %s \n' "$f2" "$f1" "$imageid"
-			$omero render edit $imageid $f2
+			$render $imageid "$f2"
 		fi
 	done
 done <"$file"
