@@ -2,18 +2,18 @@
 channels:
   1:
     active: true
-    color: 0000FF
-    label: Vimentin
-  2:
-    active: false
-    color: FFFFFF
-    label: Cell
-  3:
-    active: true
     color: FF0000
     label: Actin
-  4:
+  2:
+    active: true
+    color: 0000FF
+    label: Vimentin
+  3:
     active: true
     color: 00FF00
     label: Microtubules
+  4:
+    active: false
+    color: FFFFFF
+    label: Cell
 version: 2
