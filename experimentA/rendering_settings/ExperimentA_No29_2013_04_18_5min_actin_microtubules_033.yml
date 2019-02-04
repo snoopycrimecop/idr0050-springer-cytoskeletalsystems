@@ -1,0 +1,15 @@
+---
+version: 2
+channels:
+  1:
+    label: Actin
+    color: FF0000
+    active: false
+  2:
+    label: Cell
+    color: FFFFFF
+    active: false
+  3:
+    label: Microtubules
+    color: 00FF00
+    active: true
