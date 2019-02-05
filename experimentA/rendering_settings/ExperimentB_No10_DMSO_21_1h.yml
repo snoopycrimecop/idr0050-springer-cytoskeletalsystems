@@ -3,9 +3,9 @@ channels:
   1:
     active: true
     color: FF0000
+    end: 20012
     label: Actin
     start: 37
-    end: 20012
   2:
     active: false
     color: FFFFFF
@@ -13,8 +13,8 @@ channels:
   3:
     active: true
     color: 00FF00
+    end: 1488
     label: Microtubules
     start: 3
-    end: 1488
 version: 2
 z: 1
