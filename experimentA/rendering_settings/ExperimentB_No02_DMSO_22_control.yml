@@ -1,0 +1,20 @@
+---
+channels:
+  1:
+    active: true
+    color: FF0000
+    label: Actin
+    start: 44
+    end: 12529
+  2:
+    active: false
+    color: FFFFFF
+    label: Cell
+  3:
+    active: true
+    color: 00FF00
+    label: Microtubules
+    start: 6
+    end: 8833
+version: 2
+z: 4
