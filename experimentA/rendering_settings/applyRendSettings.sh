@@ -10,7 +10,8 @@
 # - You need to log in first before running this script.
 # - If any of the datasets has more than 100 images increase the --limit parameter!
 
-file="idr0050-all-renderingMapping.tsv"
+datasets_file="idr0050-datasets-renderingMapping.tsv"
+images_file="idr0050-images-renderingMapping.tsv"
 omero="/opt/omero/server/OMERO.server/bin/omero"
 render="/opt/omero/server/OMERO.server/bin/omero render set"
 
@@ -28,5 +29,21 @@ do
 			$render $imageid "$f2"
 		fi
 	done
-done <"$file"
+done <"$datasets_file"
 
+
+while IFS='	' read -r f
+do
+	imageids=`$omero hql --ids-only --limit 1000 --style csv -q "select img from DatasetImageLink l join l.parent as ds join l.child as img where img.name like '$f%%'"`
+	IFS=',' read -r -a array <<< $imageids
+
+	for imageid in "${array[@]}"
+	do
+		imageid=${imageid/ */}
+		if [[ $imageid == Image* ]]
+		then
+			printf 'Applying rendering settings %s to %s \n' "$f.yml" "$imageid"
+			$render $imageid "$f.yml"
+		fi
+	done
+done <"$images_file"
