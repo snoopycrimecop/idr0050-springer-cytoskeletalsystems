@@ -40,7 +40,7 @@ Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http:/
 # EXPERIMENT SECTION																																	
 																																	
 Experiment Number	1																																
-Comment[IDR Experiment Name]																																	
+Comment[IDR Experiment Name]	idr0050-springer-cytoskeletalsystems/experimentA																																
 Experiment Description	"Characterization of cytoskeletal systems (actin, microtubules, vimentin networks) to cyclic straining using confocal laser scanning microscopy, including experiments with nocodazole to depolymerize microtubules"																																
 Experiment Size	Datasets:	4809	5D Images: 	Average Image Dimension (XYZCT):	1756 x 1756 x 2 x 1 x 3 Total Gb:	151.3 																												 																																
 Experiment Imaging Method	"confocal laser scanning microscopy (phase contrast, fluorescence)"																																
