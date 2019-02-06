@@ -8,7 +8,7 @@ Study Description	"In mammalian cells, actin, microtubules, and various types of
 Study Organism	"Homo sapiens"																																
 Study Organism Term Source REF	NCBITaxon																																
 Study Organism Term Accession	9606																																
-Study Experiments Number	2																															
+Study Experiments Number	1																															
 Study External URL																														
 Study Public Release Date																																
 																																	
