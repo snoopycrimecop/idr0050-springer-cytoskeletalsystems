@@ -1,6 +1,6 @@
 # STUDY DESCRIPTION SECTION																																																																		
 Comment[IDR Study Accession]	idr0050																															
-Study Title	Unbiased pattern analysis reveals highly diverse responses of cytoskeletal systems to cyclic straining																															
+Study Title	Analysis of cyclic straining on cytoskeletal systems																															
 Study Type	Confocal laser scanning microscopy of cytoskeletal systems																															
 Study Type Term Source REF																															
 Study Type Term Accession																																
@@ -41,8 +41,8 @@ Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http:/
 																																	
 Experiment Number	1																																
 Comment[IDR Experiment Name]																																	
-Experiment Description	"Characterization of cytoskeletal systems (actin, microtubules, vimentin networks) to cyclic straining using confocal laser scanning microscopy"																																
-Experiment Size	Datasets:	3955	5D Images: 	Average Image Dimension (XYZCT):	2048 x 2048 x 1 x 3 x 1 Total Gb:	75.9  																												 																																
+Experiment Description	"Characterization of cytoskeletal systems (actin, microtubules, vimentin networks) to cyclic straining using confocal laser scanning microscopy, including experiments with nocodazole to depolymerize microtubules"																																
+Experiment Size	Datasets:	4809	5D Images: 	Average Image Dimension (XYZCT):	1756 x 1756 x 2 x 1 x 3 Total Gb:	151.3 																												 																																
 Experiment Imaging Method	"confocal laser scanning microscopy (phase contrast, fluorescence)"																																
 Experiment Imaging Method Term Source REF	FBbi																																
 Experiment Imaging Method Term Accession	FBbi_00000251	FBbi_00000247	FBbi_00000246																																
@@ -87,55 +87,4 @@ Processed Data Column Name
 Processed Data Column Type																																	
 Processed Data Column Annotation Level																																																														
 Processed Data Column Description																												
-Processed Data Column Link To Assay File																													
-
-#####################################################################################################################
-Experiment Number	2																																
-Comment[IDR Experiment Name]																																	
-Experiment Description	"additional experiments with nocodazole to depolymerize microtubules"																																
-Experiment Size	Datasets: 854	5D Images: 	Average Image Dimension (XYZCT):	1488 x 1488 x 1 x 3 x 1 Total Gb: 	75.4 																																																													
-Experiment Imaging Method	"confocal laser scanning microscopy (phase contrast, fluorescence)"																																
-Experiment Imaging Method Term Source REF	FBbi																																
-Experiment Imaging Method Term Accession	FBbi_00000251	FBbi_00000247	FBbi_00000246																																
-Experiment Comments																																	
-																																	
-# assay files																																	
-Experiment Assay File	idr0050-experimentB-assay.txt																																
-Experiment Assay File Format	tab-delimited text																																
-Assay Experimental Conditions																																	
-Assay Experimental Conditions Term Source REF	 																																
-Assay Experimental Conditions Term Accession	 																																
-Quality Control Description																																	
-																																	
-# Protocols																																	
-Protocol Name	growth protocol	treatment protocol	image aquistion and feature extraction protocol	data analysis protocol																													
-Protocol Type	growth protocol	treatment protocol	image aquistion and feature extraction protocol	data analysis protocol																													
-Protocol Type Term Source REF	 																															
-Protocol Type Term Accession	 																															
-Protocol Description																													
-																																	
-# Phenotypes																																	
-Phenotype Name																																
-Phenotype Description																																	
-Phenotype Score Type	 																																
-Phenotype Term Source REF																																
-Phenotype Term Name																																	
-Phenotype Term Accession		 																														
-																																	
-																																	
-# Feature Level Data Files (give individual file details unless there is one file per well)																																	
-Feature Level Data File Name																																	
-Feature Level Data File Format																																	
-Feature Level Data File Description																																	
-Feature Level Data Column Name																																	
-Feature Level Data Column Description																																	
-																																	
-#  Processed Data Files 																																	
-Processed Data File Name	idr0050-experimentB-processed.txt																																
-Processed Data File Format	tab-delimited text																																
-Processed Data File Description																																	
-Processed Data Column Name																																	
-Processed Data Column Type																																	
-Processed Data Column Annotation Level																																																																	
-Processed Data Column Description																																	
-Processed Data Column Link To Assay File																						
+Processed Data Column Link To Assay File																							
