@@ -4,8 +4,8 @@ Study Title	Analysis of cyclic straining on cytoskeletal systems
 Study Type	Confocal laser scanning microscopy of cytoskeletal systems																															
 Study Type Term Source REF																															
 Study Type Term Accession																																
-Study Description	"In mammalian cells, actin, microtubules, and various types of cytoplasmic intermediate filaments respond to external stretching. Here, we investigated the underlying processes in endothelial cells plated on soft substrates from silicone elastomer. After cyclic stretch (0.13 Hz, 14% strain amplitude) for periods ranging from 5 min to 8 h, cells were fixed and double-stained for microtubules and either actin or vimentin. Cell images were analyzed by a two-step routine. In the first step, micrographs were segmented for potential fibrous structures. In the second step, the resulting binary masks were auto- or cross-correlated. Autocorrelation of segmented images provided a sensitive and objective measure of orientational and translational order of the different cytoskeletal systems. Aligning of correlograms from individual cells removed the influence of only partial alignment between cells and enabled determination of intrinsic cytoskeletal order. We found that cyclic stretching affected the actin cytoskeleton most, microtubules little, and vimentin mostly only via reorientation of the whole cell. The similarity, i.e., cross-correlation, between vimentin and microtubules was much higher than the one between actin and microtubules. Moreover, prolonged cyclic stretching slightly decoupled the cytoskeletal systems as it reduced the cross-correlations in both cases. Finally, actin and microtubules were more correlated at peripheral regions of cells whereas vimentin and microtubules correlated more in central regions."		 																														
-Study Organism	"Homo sapiens"																																
+Study Description	In mammalian cells, actin, microtubules, and various types of cytoplasmic intermediate filaments respond to external stretching. Here, we investigated the underlying processes in endothelial cells plated on soft substrates from silicone elastomer. After cyclic stretch (0.13 Hz, 14% strain amplitude) for periods ranging from 5 min to 8 h, cells were fixed and double-stained for microtubules and either actin or vimentin. Cell images were analyzed by a two-step routine. In the first step, micrographs were segmented for potential fibrous structures. In the second step, the resulting binary masks were auto- or cross-correlated. Autocorrelation of segmented images provided a sensitive and objective measure of orientational and translational order of the different cytoskeletal systems. Aligning of correlograms from individual cells removed the influence of only partial alignment between cells and enabled determination of intrinsic cytoskeletal order. We found that cyclic stretching affected the actin cytoskeleton most, microtubules little, and vimentin mostly only via reorientation of the whole cell. The similarity, i.e., cross-correlation, between vimentin and microtubules was much higher than the one between actin and microtubules. Moreover, prolonged cyclic stretching slightly decoupled the cytoskeletal systems as it reduced the cross-correlations in both cases. Finally, actin and microtubules were more correlated at peripheral regions of cells whereas vimentin and microtubules correlated more in central regions.		 																														
+Study Organism	Homo sapiens																																
 Study Organism Term Source REF	NCBITaxon																																
 Study Organism Term Accession	9606																																
 Study Experiments Number	1																															
@@ -23,12 +23,12 @@ Study DOI
 Study Person Last Name	Merkel																																
 Study Person First Name	Rudolf																																
 Study Person Email	r.merkel@fz-juelich.de		 																														
-Study Person Address	"Institute of Complex Systems 7, Forschungszentrum Jülich GmbH, Jülich, Germany"																																																																	
+Study Person Address	Institute of Complex Systems 7, Forschungszentrum Jülich GmbH, Jülich, Germany																																																																	
 Study Person Roles	submitter																																
 																																	
 # Study License and Data DOI																																	
-Study License	CC BY-ND 4.0 																																
-Study License URL	https://creativecommons.org/licenses/by-nd/4.0/	
+Study License	CC-BY 4.0 																																
+Study License URL	https://creativecommons.org/licenses/by/4.0/	
 Study Copyright Springer et al																															
 Study Data Publisher	 																																
 Study Data DOI	 																																
@@ -41,9 +41,9 @@ Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http:/
 																																	
 Experiment Number	1																																
 Comment[IDR Experiment Name]	idr0050-springer-cytoskeletalsystems/experimentA																																
-Experiment Description	"Characterization of cytoskeletal systems (actin, microtubules, vimentin networks) to cyclic straining using confocal laser scanning microscopy, including experiments with nocodazole to depolymerize microtubules"																																
+Experiment Description	Characterization of cytoskeletal systems (actin, microtubules, vimentin networks) to cyclic straining using confocal laser scanning microscopy, including experiments with nocodazole to depolymerize microtubules.																																
 Experiment Size	Datasets:	4809	5D Images: 	Average Image Dimension (XYZCT):	1756 x 1756 x 2 x 1 x 3 Total Gb:	151.3 																												 																																
-Experiment Imaging Method	"confocal laser scanning microscopy (phase contrast, fluorescence)"																																
+Experiment Imaging Method	confocal microscopy	phase contrast microscopy	fluorescence microscopy																															
 Experiment Imaging Method Term Source REF	FBbi																																
 Experiment Imaging Method Term Accession	FBbi_00000251	FBbi_00000247	FBbi_00000246																																
 Experiment Comments																																	
@@ -57,8 +57,8 @@ Assay Experimental Conditions Term Accession
 Quality Control Description																																	
 																																	
 # Protocols																																	
-Protocol Name	growth protocol	treatment protocol	image aquistion and feature extraction protocol	data analysis protocol																													
-Protocol Type	growth protocol	treatment protocol	image aquistion and feature extraction protocol	data analysis protocol																													
+Protocol Name	growth protocol	treatment protocol	image acquistion and feature extraction protocol	data analysis protocol																													
+Protocol Type	growth protocol	treatment protocol	image acquistion and feature extraction protocol	data analysis protocol																													
 Protocol Type Term Source REF																														
 Protocol Type Term Accession																														
 Protocol Description																													
