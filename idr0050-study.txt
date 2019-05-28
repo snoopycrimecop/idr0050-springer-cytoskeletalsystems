@@ -10,7 +10,7 @@ Study Organism Term Source REF	NCBITaxon
 Study Organism Term Accession	9606																																
 Study Experiments Number	1																															
 Study External URL																														
-Study Public Release Date																																
+Study Public Release Date	2019-02-07																																
 																																	
 # Study Publication																																	
 Study PubMed ID	30865622																																
