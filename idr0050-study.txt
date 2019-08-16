@@ -14,9 +14,9 @@ Study Public Release Date	2019-02-07
 																																	
 # Study Publication																																	
 Study PubMed ID	30865622																																
-Study Publication Title	Unbiased pattern analysis reveals highly diverse responses of cytoskeletal systems to cyclic straining																																
-Study Author List	Ronald Springer, Alexander Zielinski, Catharina Pleschka, Bernd Hoffmann, Rudolf Merkel																																
-Study PMC ID																																	
+Study Publication Title	Unbiased pattern analysis reveals highly diverse responses of cytoskeletal systems to cyclic straining.																																
+Study Author List	Springer R, Zielinski A, Pleschka C, Hoffmann B, Merkel R																																
+Study PMC ID	PMC6415792																																
 Study DOI	https://doi.org/10.1371/journal.pone.0210570																																
 																																	
 # Study Contacts																																	
